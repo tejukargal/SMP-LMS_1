@@ -3,8 +3,10 @@ const path = require('path');
 const fs = require('fs-extra');
 
 let mainWindow;
-const userDataPath = path.join(app.getPath('documents'), 'LeaveManagement');
-const dataFilePath = path.join(userDataPath, 'leaveData.json');
+
+// Use relative paths for data storage within the application folder
+const appDataPath = path.join(__dirname, 'data');
+const dataFilePath = path.join(appDataPath, 'leaveData.json');
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -27,7 +29,7 @@ function createWindow() {
 async function initializeData() {
     try {
         // Ensure directory exists
-        await fs.ensureDir(userDataPath);
+        await fs.ensureDir(appDataPath);
 
         // Check if data file exists
         const exists = await fs.pathExists(dataFilePath);
@@ -138,7 +140,7 @@ ipcMain.handle('save-data', async (event, data) => {
 ipcMain.handle('create-backup', async () => {
     try {
         const backupPath = path.join(
-            userDataPath, 
+            appDataPath, 
             `backup_${new Date().toISOString().split('T')[0]}.json`
         );
         await fs.copy(dataFilePath, backupPath);
@@ -153,7 +155,7 @@ ipcMain.handle('restore-backup', async () => {
     try {
         const result = await dialog.showOpenDialog(mainWindow, {
             title: 'Select Backup File',
-            defaultPath: userDataPath,
+            defaultPath: appDataPath,
             filters: [{ name: 'JSON', extensions: ['json'] }],
             properties: ['openFile']
         });
@@ -174,4 +176,9 @@ ipcMain.handle('restore-backup', async () => {
         console.error('Error restoring backup:', error);
         throw error;
     }
+});
+
+// Return downloads folder path
+ipcMain.handle('get-downloads-path', () => {
+    return app.getPath('downloads');
 });
