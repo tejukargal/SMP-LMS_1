@@ -1,0 +1,66 @@
+{
+  "name": "leave-management-system",
+  "version": "1.0.0",
+  "description": "Desktop Leave Management Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^28.0.0",
+    "xlsx": "^0.18.5",
+    "fs-extra": "^11.3.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.leavemanagement.app",
+    "productName": "Leave Management System",
+    "mac": {
+      "category": "public.app-category.business"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "employeeData": [
+    {
+      "empId": "100156106",
+      "name": "MAHABALESHWARA",
+      "designation": "SUPERINTENDENT",
+      "group": "B",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156113",
+      "name": "HEMANTH Y R",
+      "designation": "LECTURER",
+      "group": "B",
+      "nextIncrementDate": "Jul-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    }
+    
+  ]
+}
