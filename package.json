@@ -28,6 +28,12 @@
     "linux": {
       "target": "AppImage"
     },
+    "extraResources": [
+      {
+        "from": "data",
+        "to": "data"
+      }
+    ],
     "directories": {
       "output": "dist"
     }
@@ -60,7 +66,118 @@
         "HPL": 150,
         "OOD": "NO_LIMIT"
       }
+    },
+    {
+      "empId": "100156118",
+      "name": "GIRISH K P",
+      "designation": "SECOND DIVISION ASSISTANT",
+      "group": "C",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156136",
+      "name": "RAVI S V",
+      "designation": "SECOND DIVISION ASSISTANT",
+      "group": "C",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156139",
+      "name": "MANJUNATHA G",
+      "designation": "GROUP D",
+      "group": "D",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156144",
+      "name": "GANAPATHI K B",
+      "designation": "GROUP D",
+      "group": "D",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156158",
+      "name": "SUHEEL AHMED KHAN",
+      "designation": "GROUP D",
+      "group": "D",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156163",
+      "name": "JAGADEESHA N P",
+      "designation": "SELECTION GRADE LECTURER",
+      "group": "A",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156164",
+      "name": "RADHIKA N",
+      "designation": "LECTURER",
+      "group": "A",
+      "nextIncrementDate": "Jul-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
+    },
+    {
+      "empId": "100156170",
+      "name": "ARUNA L",
+      "designation": "SECOND DIVISON ASSISTANT",
+      "group": "C",
+      "nextIncrementDate": "Jan-25",
+      "leaveBalance": {
+        "CL": 15,
+        "RH": 2,
+        "EL": 300,
+        "HPL": 150,
+        "OOD": "NO_LIMIT"
+      }
     }
-    
   ]
 }
